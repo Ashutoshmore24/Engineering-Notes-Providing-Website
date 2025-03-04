@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotesLab - First Year Engineering</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <h1>NotesLab</h1>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="subject.html">Subject</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                    
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <pre>
+
+            </pre>
+            <h2> <style>
+                h2 {
+                    color: aliceblue;
+
+                }
+            </style>Welcome to NotesLab!</h2>
+            <p>Your one-stop solution for  your Engineering Notes !</p>
+            <a href="#departments" class="cta-button">Explore Notes</a>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section id="departments" class="departments">
+        <h2>Choose Your Department</h2>
+        <div class="department-cards">
+            <div class="card">
+                <img src="cs.logo.jpeg" alt="CS Department">
+                <h3>CS Department</h3>
+                <a href="subject.html" class="btn">View Notes</a>
+            </div>
+            <div class="card">
+                <img src="it.logo.jpeg" alt="IT Department">
+                <h3>IT Department</h3>
+                <a href="subject.it.html" class="btn">View Notes</a>
+            </div>
+            <div class="card">
+                <img src="entc.logo.jpeg" alt="ENTC Department">
+                <h3>ENTC Department</h3>
+                <a href="subject.entc.html"class="btn">View Notes</a>
+            </div>
+            <div class="card">
+                <img src="civil.logo.jpeg" alt="Civil Department">
+                <h3>Civil Department</h3>
+                <a href="subject.civil.html" class="btn">View Notes</a>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About NotesLab</h2>
+        <p>NotesLab is a platform dedicated to providing high-quality notes and study materials for first-year engineering students. It helps you access departmental notes with ease and enhances your learning experience.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 NotesLab. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ashutosh-more-58b21332b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin">
+                <i class="fab fa-linkedin"></i> Ashutosh More
+            </a>
+        </div>
+        <div class="social-icons">
+            <a href="#" target="_blank" class="linkedin">
+                <i class="fab fa-linkedin"></i> Raj Singhania
+            </a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/himanshu-chawre-b7221332b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin">
+                <i class="fab fa-linkedin"></i> Himanshu Chawre
+            </a>
+        </div>
+    </footer>
+    
+</body>
+</html>
