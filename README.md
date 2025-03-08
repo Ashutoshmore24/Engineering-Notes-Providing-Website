@@ -1,3 +1,3 @@
 # Engineering-Notes-Providing-Website
-# 📘 Engineering Notes Hub  
+# 📘 Engineering NotesLab 
 🚀 A website providing high-quality engineering notes for students.  
