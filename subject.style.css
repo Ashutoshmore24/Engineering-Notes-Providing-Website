@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    padding: 20px 30px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f1c40f;
+}
+
+.subjects {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.subjects:hover {
+    transform: translateY(-5px);
+}
+
+.subjects h2 {
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.subject-cards {
+    display: flex;
+    justify-content: center; /* Centers the cards horizontally */
+    align-items: center; /* Centers vertically if needed */
+    flex-wrap: wrap; /* Allows wrapping if too many cards */
+    gap: 20px; /* Spacing between cards */
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 220px; /* Adjust width as needed */
+}
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin: 15px 0;
+    color: #2c3e50;
+    font-size: 22px;
+}
+
+.card a {
+    display: inline-block;
+    padding: 12px;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.card a:hover {
+    background: linear-gradient(135deg, #2980b9, #1c2833);
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 14px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
