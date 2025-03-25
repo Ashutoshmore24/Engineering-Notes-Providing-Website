@@ -118,22 +118,22 @@ ul {
 .department-cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 90px;
     flex-wrap: wrap;
 }
 
 .card {
     background-color: #f9f9f9;
     padding: 20px;
-    width: 220px;
+    width: 300px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .card img {
@@ -149,8 +149,8 @@ ul {
 
 .card a {
     display: inline-block;
-    background-color: #131921;
-    color: white;
+    background: linear-gradient(to left, rgb(10, 10, 10) , rgb(75, 73, 73));
+    color:  rgb(240, 235, 235);
     padding: 10px 20px;
     border-radius: 5px;
     margin-top: 10px;
