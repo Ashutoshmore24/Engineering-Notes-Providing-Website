@@ -11,9 +11,13 @@ body {
     background-color: #bbbbbe;
     color: #333;
 }
+.navbar h1{
+    color: white;
+    font-size: 50px
+}
 
 h1, h3 {
-    color: #171b20;
+    color: #090808;
 }
 .departments h2{
     color: rgb(14, 12, 12);
@@ -27,8 +31,6 @@ a {
 ul {
     list-style-type: none;
 }
-
-/* Navbar */
 /* Navbar */
 .navbar {
     display: flex;
@@ -41,112 +43,137 @@ ul {
     position: relative;
     width: 100%
 }
-
-/* Add this style to ensure the title is centered */
-.navbar h1 {
-    position:absolute; /* Position it absolutely */
-    left: 50%; /* Move it 50% from the left of the parent */
-    transform: translateX(-50%); /* Shift it back by 50% of its width to center */
-    font-size: 100px; /* Size of the title */
-    color: white;
-    margin-top: 100px;
-    margin-left: 5px;
-}
-
 /* Navbar links - Align to the right */
 .navbar nav ul {
     display: flex;
-    gap: 30px;
+    gap: 35px;
     margin-left: auto; /* This will push the nav items to the right */
 }
-
 .navbar nav ul li {
-    font-size: 18px;
+    font-size: 22px;
 }
-
 .navbar nav ul li a {
     color: white;
 }
-
 .navbar nav ul li a:hover {
     color: #febd69; /* Hover effect */
 }
-
-/* Hero Section */
+/* Hero Section with background */
 .hero {
-    background-color: #131921;
+    background-image: url('library-bg.jpg'); /* Replace with a good quality image or a URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
     color: white;
-    padding: 50px 0px;
     text-align: center;
+    overflow: hidden;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(42, 41, 41, 0.7), rgba(0, 0, 0, 0.85));
+    z-index: 1;
 }
 
-.hero h2 {
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+    padding: 25px 20px 80px;
+    animation: zoomIn 15s infinite alternate ease-in-out;
+}
+/* Zoom animation */
+@keyframes zoomIn {
+    from {
+        background-size: 50%;
+    }
+    to {
+        background-size: 10%;
+    }
+}
+.hero-title {
+    font-size: 90px;
+    font-weight: 800;
+    color: #fdae03;
+    text-shadow: 3px 3px 8px rgba(10, 10, 10, 0.8);
+    margin-bottom: 30px;
+}
+/* Marquee styles */
+.updates {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    color: #fdfdfd;
+}
+
+/* Text content below title */
+.hero-content h2 {
     font-size: 36px;
+    margin-bottom: 15px;
 }
 
-.hero p {
-    font-size: 18px;
-    margin: 20px 0;
+.hero-content p {
+    font-size: 20px;
+    color: #e0e0e0;
+    margin-bottom: 30px;
 }
 
 .cta-button {
-    background-color: #fbb00d;
-    color: #0c0c0c;
+    background-color: #0d9cfb;
+    color: #f8f2f2;
     font-weight: bold;
     padding: 15px 30px;
-    font-size: 20px;
-    border-radius: 7px;
-    transition: background-color 0.3s;
+    font-size: 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .cta-button:hover {
-    background-color: #e7a007e3;
+    background-color: #0ef14e;
+    transform: scale(1.05);
 }
-
 /* Departments Section */
 .departments {
     padding: 40px 0;
     text-align: center;
     background-color: #fff;
 }
-
 .departments h2 {
     font-size: 32px;
     margin-bottom: 40px;
 }
-
 .department-cards {
     display: flex;
     justify-content: center;
     gap: 90px;
     flex-wrap: wrap;
 }
-
 .card {
     background-color: #f9f9f9;
     padding: 20px;
     width: 300px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 5px rgba(4, 4, 4, 0.1);
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
-
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-13px);
 }
-
 .card img {
     width: 100%;
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
 }
-
 .card h3 {
     margin: 15px 0;
 }
-
 .card a {
     display: inline-block;
     background: linear-gradient(to left, rgb(10, 10, 10) , rgb(75, 73, 73));
@@ -155,7 +182,6 @@ ul {
     border-radius: 5px;
     margin-top: 10px;
 }
-
 .card a:hover {
     background-color: #febd69;
 }
@@ -175,7 +201,6 @@ ul {
     max-width: 800px;
     margin: 0 auto;
 }
-
 /* Contact Section */
 .contact {
     padding: 40px 0;
@@ -194,7 +219,6 @@ ul {
     max-width: 600px;
     margin: 0 auto;
 }
-
 /* Input Fields */
 .contact form input, 
 .contact form textarea {
@@ -205,7 +229,6 @@ ul {
     border: 1px solid #ccc;
     transition: all 0.3s ease-in-out;
 }
-
 /* Input Hover & Focus Effect */
 .contact form input:focus, 
 .contact form textarea:focus {
@@ -213,7 +236,6 @@ ul {
     outline: none;
     box-shadow: 0px 0px 8px rgba(254, 189, 105, 0.8);
 }
-
 /* Submit Button */
 .contact form button {
     background-color: #febd69;
@@ -225,20 +247,16 @@ ul {
     font-size: 16px;
     transition: all 0.3s ease-in-out;
 }
-
 /* Button Hover Effect */
 .contact form button:hover {
     background-color: #f0a500;
 }
-
 /* Responsive Design */
 @media (max-width: 600px) {
     .contact form {
         width: 90%;
     }
 }
-
-
 /* Footer Styling */
 footer {
     background: linear-gradient(135deg,#04a7ff,#042ff1);
@@ -251,13 +269,11 @@ footer {
     align-items: center;
     padding: 15px 50px;
 }
-
 /* Social Icons */
 .social-icons {
     display: flex;
     gap: 15px;
 }
-
 /* LinkedIn Icon Styling */
 .social-icons a {
     color: white;
@@ -268,7 +284,6 @@ footer {
     align-items: center;
     gap: 5px;
 }
-
 .social-icons a i {
     font-size: 22px;
 }
@@ -276,7 +291,6 @@ footer {
 .social-icons a:hover {
     color: #febd69;
 }
-
 /* LinkedIn Specific Styling */
 .linkedin {
     color: #0077b5; /* LinkedIn blue */
